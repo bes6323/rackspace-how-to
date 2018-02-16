@@ -5,7 +5,7 @@ title: Cloud Servers with Managed Operations support for Windows
 type: article
 created_date: '2011-03-16'
 created_by: David Hendler
-last_modified_date: '2017-03-03'
+last_modified_date: '2017-06-06'
 last_modified_by: Stephanie Fillmon
 product: Managed Operations
 product_url: managed-operations
@@ -98,33 +98,10 @@ The Managed Operations service level supports the following SMTP tool:
 | --- | --- | --- | --- | --- | --- |
 | [IIS Outgoing Only](http://www.iis.net/) |**Yes** | **Yes** | **Yes** | **Yes** | No |
 
-### Active Directory (US only)
+### Active Directory
 
-The following table indicates which Active Directory (AD) actions are
-supported by the Managed Operations service level:
+Active Directory (AD) is not currently supported. Reach out to [Rackspace support](https://www.rackspace.com/en-us/support) to evaluate alternative solutions.
 
-| Supported | Windows 2008 R2| Windows 2012 R2|
-| --------- | -------------| ------------ |
-| Set up an AD Controller | **Yes** | **Yes** |
-|Add users to AD | **Yes** | **Yes** |
-| [Establish AD Trust to customer's on-premises AD (their Data center) using RackConnect](https://www.rackspace.com/cloud/hybrid/rackconnect) |**Yes** | **Yes** |
-| Establish AD trust between customer's dedicated and cloud environments, hosted at Rackspace | **Yes** |**Yes** |
-| Establish AD trust to Rackspace Intensive domain | No | No |
-| Replication | **Yes** | **Yes** |
-| Authentication for web | **Yes** | **Yes** |
-| Internal DNS for AD |**Yes** | **Yes** |
-| LDAP | **Yes** | **Yes** |
-|Application partitions when using other Rackspace application services (for example, SharePoint and Exchange) | **Yes** | **Yes** |
-|Development for federated services | No | No |
-| Development for application integration | No | No |
-| Snapshots or backups of domain controller | No | No |
-| Group policy objects | No | No |
-| Distributed file system (DFS) | No | No |
-| RackConnect to dedicated environment |**Yes** | **Yes** |
-| Multiple domain controllers | **Yes** | **Yes** |
-| Rights management | No | No |
-| Federated services | No | No |
-| CA services | No | No |
 
 ### Other packages
 
@@ -135,14 +112,6 @@ third party services.
 
 -   **Load Balancing:** Support is provided through the use of Cloud
     Load Balancers.
-
--   **Email:** Support is provided through Rackspace Email and using
-    IIS SMTP on the server. Cloud servers with the Managed Operations
-    service Level are preconfigured to use Mailgun, our mail relay service,
-    to ensure reliable mail delivery. The first 50,000 emails sent each
-    month are free, and your mail package can be upgraded if higher volume
-    is expected. For more details see the [Mailgun Rackspace pricing
-    page](http://www.mailgun.com/rackspace).
 
 -   **DNS:** The use of the Rackspace Cloud name servers for DNS
     is supported. Windows DNS is currently not supported.

@@ -5,7 +5,7 @@ title: Install the Cloud Backup agent on Windows by using silent installation
 type: article
 created_date: '2015-01-20'
 created_by: Rose Contreras
-last_modified_date: '2016-07-14'
+last_modified_date: '2017-06-23'
 last_modified_by: Catherine Richardson
 product: Cloud Backup
 product_url: cloud-backup
@@ -24,10 +24,7 @@ Reinstalling the agent on a server disconnects any previously registered agents 
 
 ### Download the installer
 
-Determine whether your Windows server architecture is 64-bit or 32-bit, and download the latest MSI installation file for that architecture from [http://agentrepo.drivesrvr.com/](http://agentrepo.drivesrvr.com/).
-
-- [32-bit Windows .msi](http://97a6455ef60243cc8c74-57c93634a2c6eae60c16d098c741cf9b.r43.cf1.rackcdn.com/win32/driveclient-latest.msi)
-- [64-bit Windows .msi](http://97a6455ef60243cc8c74-57c93634a2c6eae60c16d098c741cf9b.r43.cf1.rackcdn.com/win64/driveclient-latest.msi) (This file will almost always be the correct one for your server.)
+For a 64-bit Windows server architecture download the latest MSI installation file for that architecture from [64-bit Windows.msi](http://agentrepo.drivesrvr.com/win64/driveclient-latest.msi) (This file will almost always be the correct one for your server).
 
 ### Perform a silent installation
 
@@ -45,7 +42,7 @@ During a fresh installation, the following values are used:
 
 - `APIKEY` (required): Your Rackspace Cloud API key. For information about viewing your API key, see [View and reset your API key](/how-to/view-and-reset-your-api-key).
 
-- `APIHOSTNAME` (required): The host address where the Cloud Backup API endpoints reside. Host addresses for various data centers are listed in the 
+- `APIHOSTNAME` (required): The host address where the Cloud Backup API endpoints reside. Host addresses for various data centers are listed in the
 [Service Access endpoints](https://developer.rackspace.com/docs/cloud-backup/v1/developer-guide/#document-general-api-info/service-access-endpoints). The Service Access endpoints should only be passing in the domain name of the endpoint and not the full URL.
 
 	<table>
@@ -62,7 +59,7 @@ During a fresh installation, the following values are used:
 		</tr>
 	</table>
 
-- `DATACENTER` (required): The data center associated with this server. Possible values are ORD, DFW, SYD, IAD, HKG, and LON.
+- `DATACENTER` (required): The data center associated with this server. The data center is the same as the region. Possible values are ORD, DFW, SYD, IAD, HKG, and LON.
 
 - `DEBUGHIGH` (default `false`): Turns on debug-level logging in the MSI custom actions and in the agent Updater service.
 
